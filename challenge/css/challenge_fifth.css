@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap');
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+.wrap{
+    border: 5px solid teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:white;
+    width:310px;
+    padding: 50px 30px 15px 30px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width:100%;
+
+}
+
+header i{
+    position: absolute;
+    left: 0px;
+}
+
+header > div{
+    font-weight: 600;
+    font-size:24px;
+}
+
+.nowplay{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:100%
+}
+
+.nowplay--image{
+    width: 110px;
+    height: 110px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.nowplay--image i{
+    color: white;
+}
+
+.nowplay--song{
+    width:50%;
+}
+
+.nowplay--song span{
+    font-size:28px;
+    font-weight: 800;
+    line-height:1.4;
+}
+
+.nowplay--song h5{
+    margin: 0;
+    opacity: 30%;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.btn__play{
+    border: 1px solid black;
+    border-radius: 10px;
+    border-bottom-width: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.btn__play span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.btn__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-bottom-width: 5px;
+    width:50px;
+    height:50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

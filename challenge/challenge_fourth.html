@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <style>
+        @keyframes circlerotate{
+            from{
+                transform:rotateZ(0);
+            }
+            to{
+                transform:rotateZ(180deg);
+            }
+        }
+
+        @keyframes height{
+            0{
+                transform:scale(1,1);
+            }
+            10%{
+                transform:scale(1,1);
+            }
+            20%{
+                transform:scale(1,1.5);
+            }
+            50%{
+                transform:scale(1,1);
+            }
+            80%{
+                transform:scale(1,1);
+            }
+            100%{
+                transform:scale(1,1);
+            }
+
+        }
+        body{
+            background-color: teal;
+            display: flex;
+            height: 100vh;
+            width: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #rotate{
+            display: flex;
+            margin: 30px 0px;
+            justify-content: space-between;
+            align-items: center;
+            height:10%;
+            width: 10%;
+            animation: circlerotate 0.5s ease-out infinite;
+
+        }
+        #size {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height:10%;
+            width: 10%;
+        }
+        .circle{
+            height:10px;
+            width:10px;
+            border-radius: 100%;
+            background-color: white;
+            box-sizing: border-box;
+
+        }
+        .rac{
+            height:50px;
+            width: 10px;
+            background-color: white;
+            box-sizing:  border-box;
+
+        }
+        .rac:nth-child(1){
+            animation: height 1s ease-in-out infinite;
+        }
+        .rac:nth-child(2){
+            animation: height 1s ease-in-out infinite;
+            animation-delay:0.2s;
+        }
+        .rac:nth-child(3){
+            animation: height 1s ease-in-out infinite;
+            animation-delay:0.4s;
+        }
+        .rac:nth-child(4){
+            animation: height 1s ease-in-out infinite;
+            animation-delay:0.6s;
+        }
+        .rac:nth-child(5){
+            animation: height 1s ease-in-out infinite;
+            animation-delay:0.8s;
+        }
+
+    </style>
+  </head>
+  <body>
+      <div id="rotate">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+      </div>
+      <div id="size">
+          <div class="rac"></div>
+          <div class="rac"></div>
+          <div class="rac"></div>
+          <div class="rac"></div>
+          <div class="rac"></div>
+      </div>
+  </body>
+</html>
